@@ -1,0 +1,72 @@
+// Section ask questions
+.section-ask-questions {
+  // @include easeOut;
+  position: fixed;
+  bottom: 0;
+  @include d-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 4.1875rem;
+  background-color: $btn-color-primary;
+  color: #fff;
+  z-index: 98;
+  box-shadow: 0px 4px 15px 15px rgba(0, 0, 0, 0.08);
+  // animation-name: showQuestionModuleBtn;
+  // animation-duration: 0.4s;
+  // // animation-delay: 0.2s;
+  // animation-fill-mode: forwards;
+  // @keyframes showQuestionModuleBtn {
+  //   0% {
+  //     opacity: 0;
+  //     transform: translateY(50%);
+  //   }
+  //   100% {
+  //     opacity: 1;
+  //     transform: translateY(0);
+  //   }
+  // }
+  &.hidden {
+    // animation-name: hideQuestionModuleBtn;
+    // animation-duration: 0.4s;
+    // // animation-delay: 0.2s;
+    // animation-fill-mode: forwards;
+    // @keyframes hideQuestionModuleBtn {
+    //   0% {
+    //     opacity: 1;
+    //     transform: translateY(0);
+    //   }
+    //   100% {
+    //     opacity: 0;
+    //     transform: translateY(50%);
+    //   }
+    // }
+    display: none;
+  }
+}
+
+.section-ask-questions__inner {
+  @include d-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  transform: scale(1);
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+.inner__text {
+  padding-right: 0.8125rem;
+}
+
+.inner__arrow-bottom {
+  margin-top: 0.3125rem;
+  margin-bottom: 0.461875rem;
+}
+
+.section-call-to-action--bottom {
+  padding-bottom: $sections-bottom-padding;
+}

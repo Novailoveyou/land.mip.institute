@@ -1,0 +1,91 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: $root-font-size;
+  min-height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: set-text-color($primary-color);
+}
+
+body {
+  background-color: #fff;
+  color: set-text-color($primary-color);
+  min-height: 100%;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body.dark-overlay {
+  &:after {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100%;
+    z-index: 97;
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+main {
+  min-height: 100%;
+  padding-bottom: 7.1875rem;
+  // margin-top: 5.375rem;
+}
+
+.hr-between-sections {
+  border: 0;
+  max-width: 50%;
+  margin: 0 auto;
+  border-bottom: 0.0625rem solid $secondary-color;
+}
+
+.bg-danger,
+.container-input-phone-number__input.bg-danger {
+  background-color: $dager-color-dimmer;
+}
+
+.circles-mobile {
+  position: absolute;
+  min-width: 100%;
+  min-height: 27.75rem;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  & svg {
+    position: absolute;
+    right: 0;
+  }
+  & svg:nth-child(1) {
+    top: 8.1875rem;
+  }
+  & svg:nth-child(2) {
+    top: 5.9375rem;
+  }
+  & svg:nth-child(3) {
+    top: 2.5rem;
+  }
+  & svg:nth-child(4) {
+    top: 0;
+  }
+}

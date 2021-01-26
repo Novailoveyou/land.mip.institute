@@ -1,0 +1,32 @@
+// Section about
+.section-about {
+  padding-top: $sections-top-padding;
+  padding-bottom: $sections-bottom-padding;
+}
+
+.content__showing-off-numbers {
+  @include d-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.showing-off-number__line {
+  height: $_3px;
+  width: $_32px;
+  background-color: #c4c4c4;
+}
+
+.showing-off-numbers__showing-off-number {
+  @include d-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: $_24px;
+}
+
+.showing-off-number__description {
+  padding-top: $_17px;
+  text-transform: uppercase;
+  font-size: $_11px;
+  line-height: $_13px;
+}

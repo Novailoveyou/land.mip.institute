@@ -1,0 +1,43 @@
+// Section sm
+.section-sm {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 98;
+}
+
+.section-sm__blocks {
+  @include d-flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.blocks__sm-block {
+  width: 25%;
+  height: 3.8125rem;
+}
+
+.sm-block__icon {
+  width: 100%;
+  height: 100%;
+  @include d-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm-block--teal {
+  background-color: #00a3ff;
+}
+
+.sm-block--salat {
+  background-color: #1bc100;
+}
+
+.sm-block--purple {
+  background-color: #9300c7;
+}
+
+.sm-block--ocean {
+  background-color: #368cdc;
+}
