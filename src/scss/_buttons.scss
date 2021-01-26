@@ -6,7 +6,7 @@
   -moz-border-radius: 0.3125rem;
   border-radius: 0.3125rem;
   text-align: center;
-  color: set-text-color($primary-color);
+  color: set-text-color($c-alpha);
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -14,80 +14,5 @@
 
   &:active {
     transform: scale(0.98);
-  }
-}
-
-.btn-primary {
-  // min-width: 19.0625rem;
-  // max-width: 19.0625rem;
-  padding-top: 1.6875rem;
-  padding-bottom: 1.6875rem;
-  font-size: 1.1875rem;
-  line-height: 1.375rem;
-  text-transform: uppercase;
-  background-color: $secondary-color;
-  color: #fff;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -150%;
-    // left: -8rem;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      355.79deg,
-      #ffffff 26%,
-      rgba(255, 255, 255, 0) 37.41%
-    );
-    opacity: 0.3;
-    transform: rotate(-57deg);
-    -webkit-animation: 3.3s linear 0s infinite normal shine;
-    animation: 3.3s linear 0s infinite normal shine;
-  }
-}
-
-.btn--secondary {
-  background-color: $secondary-color;
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
-  padding: 1.4375rem;
-  font-size: 0.875rem;
-  line-height: 1rem;
-  color: #fff;
-  border: 0;
-}
-
-.btn-tertiary {
-  height: 4.3125rem;
-  max-width: 16.8125rem;
-  background-color: $btn-color-primary;
-  padding: 1.5rem;
-}
-
-.learn-more-btn {
-  &.btn-primary {
-    min-width: auto;
-    max-width: 15.5rem;
-  }
-}
-
-.btn-questions-module {
-  margin-top: $_11px;
-  height: 2.6875rem;
-  padding: $_15px;
-}
-
-.btn-input.btn {
-  border: 0;
-  max-width: 100%;
-  max-height: 100%;
-  padding: 1.5rem;
-  &:focus,
-  &:active {
-    outline: none;
-    background-color: $secondary-color;
-    border: 0;
   }
 }

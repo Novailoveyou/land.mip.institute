@@ -1,38 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import 'reset';
+@import 'normalize';
 @import 'config';
+@import 'fonts';
 @import 'animations';
-@import 'mixin';
 @import 'utility';
 @import 'general';
-@import 'menu';
-@import 'header';
-@import 'heading_section';
-@import 'section_testimonials';
-@import 'section_about';
-@import 'section_partners';
-// @import "section_sm";
-// @import "section_cards";
-@import 'section_ask-question';
-@import 'module_questions';
 @import 'buttons';
-
-.section__learn-more {
-  display: none;
-}
-
-.section-needed-docs {
-  display: none;
-}
-
-.step-success-row__back-to-main {
-  border: $_1px solid $secondary-color;
-  color: $secondary-color;
-  padding: $_12px;
-  font-size: $_14px;
-  max-width: 12.375rem;
-}
+@import 'header';
+@import 'section-header';
+@import 'section-perks';
 
 // IOS support to prevent it from zooming when User clicks on the inputs
 
@@ -53,4 +30,4 @@
   }
 }
 
-@import 'mobile';
+// @import 'mobile';

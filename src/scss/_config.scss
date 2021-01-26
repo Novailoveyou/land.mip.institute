@@ -1,75 +1,14 @@
-$primary-color: #adadad;
-$secondary-color: #2874ff;
-$secondary-color-r: 255;
-$secondary-color-g: 102;
-$secondary-color-b: 0;
-$tertiary-color: #00a3ff;
-$bg-primary-color: rgba(40, 116, 255, 0.2);
-$menu-items-colors: #858585;
-$dropdown-item-selected-bg: rgba(40, 116, 255, 0.2);
-$section-bg-primary-color: #f9f9f9;
-$svg-color-counter: #2874ff;
-$svg-color-inner-counter: #000;
-$btn-color-primary: #1bc100;
-$danger-color: #fb0000;
-$dager-color-dimmer: rgba(221, 86, 86, 0.4);
-$background-opacity: 0.55;
-$sections-top-padding: 4.25rem;
-$sections-padding--half: 2.125rem;
-$sections-bottom-padding: 4.25rem;
-$card-border-radius: 0.3125rem;
-
-$root-font-size-num-only: 16;
-$root-font-size: $root-font-size-num-only + 'px';
-
-// Bacgkground colors for SM icons
-$bg-color-telegram: #00a3ff;
-$bg-color-whatsapp: #1bc100;
-$bg-color-viber: #9300c7;
-$bg-color-vk: #368cdc;
-$bg-color-phone: #0050e3;
-$bg-color-email: #ff6600;
-
-// Rem and px for font sizes
-$_39px: 39 / $root-font-size-num-only + rem;
-$_38px: 38 / $root-font-size-num-only + rem;
-$_37px: 37 / $root-font-size-num-only + rem;
-$_36px: 36 / $root-font-size-num-only + rem;
-$_35px: 35 / $root-font-size-num-only + rem;
-$_34px: 34 / $root-font-size-num-only + rem;
-$_33px: 33 / $root-font-size-num-only + rem;
-$_32px: 32 / $root-font-size-num-only + rem;
-$_31px: 31 / $root-font-size-num-only + rem;
-$_30px: 30 / $root-font-size-num-only + rem;
-$_29px: 29 / $root-font-size-num-only + rem;
-$_28px: 28 / $root-font-size-num-only + rem;
-$_27px: 27 / $root-font-size-num-only + rem;
-$_26px: 26 / $root-font-size-num-only + rem;
-$_25px: 25 / $root-font-size-num-only + rem;
-$_24px: 24 / $root-font-size-num-only + rem;
-$_23px: 23 / $root-font-size-num-only + rem;
-$_22px: 22 / $root-font-size-num-only + rem;
-$_21px: 21 / $root-font-size-num-only + rem;
-$_20px: 20 / $root-font-size-num-only + rem;
-$_19px: 19 / $root-font-size-num-only + rem;
-$_18px: 18 / $root-font-size-num-only + rem;
-$_17px: 17 / $root-font-size-num-only + rem;
-$_16px: 16 / $root-font-size-num-only + rem;
-$_15px: 15 / $root-font-size-num-only + rem;
-$_14px: 14 / $root-font-size-num-only + rem;
-$_13px: 13 / $root-font-size-num-only + rem;
-$_12px: 12 / $root-font-size-num-only + rem;
-$_11px: 11 / $root-font-size-num-only + rem;
-$_10px: 10 / $root-font-size-num-only + rem;
-$_9px: 9 / $root-font-size-num-only + rem;
-$_8px: 8 / $root-font-size-num-only + rem;
-$_7px: 7 / $root-font-size-num-only + rem;
-$_6px: 6 / $root-font-size-num-only + rem;
-$_5px: 5 / $root-font-size-num-only + rem;
-$_4px: 4 / $root-font-size-num-only + rem;
-$_3px: 3 / $root-font-size-num-only + rem;
-$_2px: 2 / $root-font-size-num-only + rem;
-$_1px: (1 / $root-font-size-num-only) + rem;
+// Colors
+$c-alpha: #6f01c6;
+$c-beta: #f87e1b;
+$c-gamma: #b250ff;
+$c-delta: #7d00e0;
+$c-epsilon: #b250ff;
+$c-zeta: #b250ff;
+$c-eta: #b250ff;
+$c-theta: #b250ff;
+$c-iota: #b250ff;
+$c-kappa: #b250ff;
 
 @mixin easeOut {
   transition: all 0.4s ease-in-out;
