@@ -1,18 +1,15 @@
 // Buttons
 .btn {
+  @extend .btn-input-shared-styles;
   display: block;
-  width: 100%;
-  -webkit-border-radius: 0.3125rem;
-  -moz-border-radius: 0.3125rem;
-  border-radius: 0.3125rem;
   text-align: center;
-  color: set-text-color($c-alpha);
-  cursor: pointer;
   position: relative;
   overflow: hidden;
   transform: scale(1);
-
   &:active {
     transform: scale(0.98);
   }
+  background-color: $c-beta;
+  color: #fff;
+  cursor: pointer;
 }

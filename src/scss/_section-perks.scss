@@ -1,14 +1,18 @@
+.section-perks {
+  margin-top: -8.3rem;
+}
+
 .perks {
   list-style-image: url(../img/svgs/check.svg);
   list-style-position: inside;
+  margin-bottom: 0;
   padding: 0.5rem 1rem;
   box-shadow: 0px 7px 100px rgba(0, 0, 0, 0.09);
   border-radius: 25px 0px 0px 0px;
   background-color: #fff;
-  transform: translateY(-55%);
   position: relative;
   z-index: 2;
-  font-size: 'Stem-extralight', sans-serif;
+  font-family: 'Stem-extralight', sans-serif;
   font-weight: 265;
   font-size: 15px;
   line-height: 120%;

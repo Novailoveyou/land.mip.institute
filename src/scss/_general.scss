@@ -23,7 +23,7 @@ a {
 
 body {
   min-height: 100%;
-  font-family: sans-serif;
+  font-family: 'Stem-medium', sans-serif;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -32,5 +32,5 @@ main {
   min-height: 100%;
   padding-bottom: 7.1875rem;
   overflow-x: hidden;
-  // margin-top: 5.375rem;
+  position: relative;
 }

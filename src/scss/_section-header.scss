@@ -31,7 +31,6 @@
 }
 
 .circle__text {
-  font-family: 'Stem-medium', sans-serif;
   font-size: 0.72001875rem;
   line-height: 120%;
   display: flex;
@@ -62,7 +61,6 @@
 }
 
 .content__title {
-  font-family: 'Stem-medium', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 120%;
@@ -80,24 +78,20 @@
   margin-top: 2.5rem;
 }
 
-.form-main__field,
-.form-main__submit {
-  width: 100%;
-  border: 0;
-  padding: 1.1875rem;
-  margin-bottom: 0.75rem;
-  border-radius: 0.25rem;
-}
-
 .form-main__field {
+  @extend .btn-input-shared-styles;
+  margin-bottom: 0.75rem;
   background-color: $c-delta;
   color: set-text-color($c-delta);
+  -webkit-appearance: none;
+  &:active,
+  &:focus {
+    background-color: $c-delta;
+  }
 }
 
 .form-main__submit {
   margin-top: 0.23rem;
-  text-align: center;
-  background-color: $c-beta;
-  color: #fff;
+  margin-bottom: 0.75rem;
 }
 // /Section header content
