@@ -3,14 +3,16 @@
 @import 'normalize';
 @import 'config';
 @import 'fonts';
-@import 'animations';
-@import 'utility';
-@import 'general';
-@import 'buttons';
-@import 'header';
-@import 'section-header';
-@import 'section-perks';
-@import 'section-discount';
+@import 'base/animations';
+@import 'base/utility';
+@import 'base/general';
+@import 'base/buttons';
+@import 'sections/header';
+@import 'sections/section-header';
+@import 'sections/section-perks';
+@import 'sections/section-discount';
+@import 'sections/section-reasons';
+@import 'sections/section-about';
 
 // IOS support to prevent it from zooming when User clicks on the inputs
 
