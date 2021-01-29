@@ -2,6 +2,9 @@
 .btn {
   @extend .btn-input-shared-styles;
   display: block;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
   text-align: center;
   position: relative;
   overflow: hidden;

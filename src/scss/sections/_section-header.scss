@@ -32,7 +32,6 @@
 
 .circle__text {
   font-size: 0.72001875rem;
-  line-height: 120%;
   display: flex;
   flex-direction: column;
   transform: rotate(10deg);
@@ -44,9 +43,7 @@
 }
 
 .discount__text {
-  font-family: 'Stem', sans-serif;
   font-size: 1.25rem;
-  font-weight: normal;
   margin-left: auto;
   margin-right: 1rem;
 }
@@ -55,22 +52,20 @@
 // Section header content
 .section-header__content {
   padding-top: 2.2rem;
+  padding-bottom: 8.4rem;
   position: relative;
   z-index: 2;
-  padding-bottom: 8.4rem;
 }
 
 .content__title {
-  font-weight: 500;
-  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
   line-height: 120%;
 }
 
 .content__subtitle {
-  font-family: 'Stem-extralight';
-  font-style: normal;
-  font-weight: 265;
-  font-size: 15px;
+  font-size: 0.9375rem;
+  font-weight: 300;
   line-height: 120%;
 }
 
@@ -78,15 +73,40 @@
   margin-top: 2.5rem;
 }
 
+.select-wrapper {
+  position: relative;
+  margin-bottom: 0.75rem;
+}
+
+.select-arrow-down {
+  background-image: url(../img/svgs/triangle-down.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+}
+
 .form-main__field {
   @extend .btn-input-shared-styles;
-  margin-bottom: 0.75rem;
+  font-weight: 300;
+  line-height: 120%;
   background-color: $c-delta;
   color: set-text-color($c-delta);
   -webkit-appearance: none;
   &:active,
   &:focus {
     background-color: $c-delta;
+  }
+  &::placeholder {
+    color: rgba(#fff, 0.5);
+  }
+  &:not(select) {
+    margin-bottom: 0.75rem;
   }
 }
 

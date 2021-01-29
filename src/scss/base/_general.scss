@@ -23,7 +23,7 @@ a {
 
 body {
   min-height: 100%;
-  font-family: 'Stem-medium', sans-serif;
+  font-family: Stem, sans-serif;
   max-width: 100%;
   overflow-x: hidden;
   // animation-name: fadeIn;
@@ -33,7 +33,12 @@ body {
 
 main {
   min-height: 100%;
-  padding-bottom: 7.1875rem;
   overflow-x: hidden;
   position: relative;
+}
+
+@media only screen and (max-width: 365px) {
+  html {
+    font-size: 4vw;
+  }
 }

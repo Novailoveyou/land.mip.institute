@@ -56,17 +56,20 @@
 
             <h4 class="content__subtitle">
               Выберите направление и забронируйте за собой
-              <span class="fw-wider">скидку 30%</span>, а также узнайте
-              о сроках, формате и стоимости обучения
+              <span class="fw-600">скидку 30%</span>, а также узнайте о сроках,
+              формате и стоимости обучения
             </h4>
 
             <form class="form-main">
-              <select name="proarea" id="proarea" class="form-main__field">
-                <option value="">Выбрать направление</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
+              <div class="select-wrapper">
+                <span class="select-arrow-down"></span>
+                <select name="proarea" id="proarea" class="form-main__field">
+                  <option value="">Выбрать направление</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
 
               <input
                 type="tel"
@@ -169,8 +172,10 @@
                 width="90px"
               />
               <div class="reason__text">
-                <h4>Работайте удаленно</h4>
-                <h5>Психологом можно работать из любой точки мира удаленно</h5>
+                <h4 class="text__title">Работайте удаленно</h4>
+                <h5 class="text__subtitle">
+                  Психологом можно работать из любой точки мира удаленно
+                </h5>
               </div>
             </li>
             <li class="reasons__reason">
@@ -182,8 +187,10 @@
                 width="90px"
               />
               <div class="reason__text">
-                <h4>Экологичная профессия</h4>
-                <h5>Психолог - тот человек, который несет пользу окружающим</h5>
+                <h4 class="text__title">Экологичная профессия</h4>
+                <h5 class="text__subtitle">
+                  Психолог - тот человек, который несет пользу окружающим
+                </h5>
               </div>
             </li>
             <li class="reasons__reason">
@@ -193,8 +200,8 @@
                 alt="Рупор"
               />
               <div class="reason__text">
-                <h4>Востребованность</h4>
-                <h5>
+                <h4 class="text__title">Востребованность</h4>
+                <h5 class="text__subtitle">
                   8989 людей в Росии ежедневно нуждаются в психологической
                   помощи
                 </h5>
@@ -207,8 +214,10 @@
                 alt="Человек и его доход"
               />
               <div class="reason__text">
-                <h4>Высокий доход</h4>
-                <h5>Средняя зарплата наших выпускников 80000 ₽</h5>
+                <h4 class="text__title">Высокий доход</h4>
+                <h5 class="text__subtitle">
+                  Средняя зарплата наших выпускников 80000 ₽
+                </h5>
               </div>
             </li>
           </ul>
@@ -218,16 +227,16 @@
       <section class="section-about">
         <div class="container">
           <div class="section-about__content">
-            <h3>Об институте</h3>
-            <p>
+            <h3 class="content__title">Об институте</h3>
+            <p class="content__info">
               Московский Институт Психологии за современный подход в
               образовании.
             </p>
-            <p>
+            <p class="content__info">
               Мы постоянно берем обратную связь от работодателей и каждый месяц
               адаптируем учебные программы.
             </p>
-            <h4>
+            <h4 class="content__big-info">
               <span class="c-beta">Это в 12 раз быстрее</span> обновления
               программы обучения в государственном ВУЗе!
             </h4>
@@ -237,7 +246,29 @@
 
       <section class="section-circle">
         <div class="container">
-          <div class="section-circle__circle"></div>
+          <div class="section-circle__circle">
+            <div class="circle__face circle__face--top">
+              <h3 class="face__title">ТОП 3</h3>
+              <h4 class="face__subtitle">
+                Входим в тройку лучших по направлению психология
+              </h4>
+            </div>
+
+            <div class="circle__face circle__face--right">
+              <h3 class="face__title">2000+</h3>
+              <h4 class="face__subtitle">Студентов уже обучили</h4>
+            </div>
+
+            <div class="circle__face circle__face--bottom">
+              <h3 class="face__title">80 т.р.</h3>
+              <h4 class="face__subtitle">Средняя зарплата наших выпускников</h4>
+            </div>
+
+            <div class="circle__face circle__face--left">
+              <h3 class="face__title">15 лет</h3>
+              <h4 class="face__subtitle">На рынке образования</h4>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -246,44 +277,56 @@
           <h3 class="title">Как проходит обучение и выпуск</h3>
           <ul class="section-steps__steps">
             <li class="steps__step">
-              <div class="text">
-                <h4>Изучаете темы</h4>
-                <h5>В курсе — практические видеоуроки.</h5>
+              <span class="step__icon"> 1 </span>
+              <div class="step__text">
+                <h4 class="text__title">Изучаете темы</h4>
+                <h5 class="text__subtitle">
+                  В курсе — практические видеоуроки.
+                </h5>
               </div>
             </li>
             <li class="steps__step">
-              <div class="text">
-                <h4>Выполняете задания</h4>
-                <h5>В том темпе, в котором вам удобно.</h5>
+              <span class="step__icon"> 2 </span>
+              <div class="step__text">
+                <h4 class="text__title">Выполняете задания</h4>
+                <h5 class="text__subtitle">
+                  В том темпе, в котором вам удобно.
+                </h5>
               </div>
             </li>
             <li class="steps__step">
-              <div class="text">
-                <h4>Общайтесь с единомышленниками</h4>
-                <h5>
+              <span class="step__icon"> 3 </span>
+              <div class="step__text">
+                <h4 class="text__title">Общайтесь с единомышленниками</h4>
+                <h5 class="text__subtitle">
                   У нас большое сообщество выпускников и студентов, которые
                   всегда помогут и подскажут.
                 </h5>
               </div>
             </li>
             <li class="steps__step">
-              <div class="text">
-                <h4>Работаете с преподавателями</h4>
-                <h5>Закрепляете знания и исправляете ошибки.</h5>
+              <span class="step__icon"> 4 </span>
+              <div class="step__text">
+                <h4 class="text__title">Работаете с преподавателями</h4>
+                <h5 class="text__subtitle">
+                  Закрепляете знания и исправляете ошибки.
+                </h5>
               </div>
             </li>
             <li class="steps__step">
-              <div class="text">
-                <h4>Получаете диплом гособразца</h4>
-                <h5>
+              <span class="step__icon"> 5 </span>
+              <div class="step__text">
+                <h4 class="text__title">Получаете диплом гособразца</h4>
+                <h5 class="text__subtitle">
                   Защищаете дипломную работу и дополняете ею своё портфолио.
                 </h5>
               </div>
             </li>
             <li class="steps__step">
-              <div class="text">
-                <h4>Готовитесь к собеседованию</h4>
-                <h5>
+              <span class="step__icon"> 6 </span>
+              <div class="step__text">
+                <h4 class="text__title">Готовитесь к собеседованию</h4>
+                <h5 class="text__subtitle">
                   Мы поможем подготовить резюме и расскажем как вести себя на
                   собеседовании в компаниях-партнерах.
                 </h5>
@@ -292,46 +335,46 @@
           </ul>
         </div>
       </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer__content">
+          <h2 class="content__title">
+            Станьте психологом с нуля или освойте новые навыки
+            <span class="c-beta">дистанционно</span> из своего города
+          </h2>
 
-      <footer>
-        <div class="container">
-          <div class="footer__content">
-            <h2 class="content__title">
-              Станьте психологом с нуля или освойте новые навыки
-              <span class="c-beta">дистанционно</span> из своего города
-            </h2>
+          <h4 class="content__subtitle">
+            Выберите направление и забронируйте за собой
+            <span class="fw-600">скидку 30%</span>, а также узнайте о сроках,
+            формате и стоимости обучения
+          </h4>
 
-            <h4 class="content__subtitle">
-              Выберите направление и забронируйте за собой
-              <span class="fw-wider">скидку 30%</span>, а также узнайте
-              о сроках, формате и стоимости обучения
-            </h4>
-
-            <form class="form-main">
+          <form class="form-main">
+            <div class="select-wrapper">
+              <span class="select-arrow-down"></span>
               <select name="proarea" id="proarea" class="form-main__field">
                 <option value="">Выбрать направление</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
               </select>
+            </div>
 
-              <input
-                type="tel"
-                placeholder="Введите номер"
-                class="form-main__field"
-              />
-              <input
-                type="submit"
-                value="Отправить"
-                class="btn form-main__submit"
-              />
-            </form>
-          </div>
+            <input
+              type="tel"
+              placeholder="Введите номер"
+              class="form-main__field"
+            />
+            <input
+              type="submit"
+              value="Отправить"
+              class="btn form-main__submit"
+            />
+          </form>
         </div>
-      </footer>
-    </main>
-
-    <footer></footer>
+      </div>
+    </footer>
 
     <script src="js/main.js"></script>
   </body>
