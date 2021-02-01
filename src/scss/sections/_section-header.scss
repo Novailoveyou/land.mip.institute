@@ -44,8 +44,10 @@
 
 .discount__text {
   font-size: 1.25rem;
-  margin-left: auto;
-  margin-right: 1rem;
+  // margin-left: auto;
+  // margin-right: 1rem;
+  margin: 0 auto;
+  transform: translateX(3.40625rem);
 }
 // /Discount
 
@@ -89,6 +91,7 @@
   top: 50%;
   right: 1rem;
   transform: translateY(-50%);
+  pointer-events: none;
 }
 
 .form-main__field {

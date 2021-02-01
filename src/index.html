@@ -30,7 +30,9 @@
             ПСИХОЛОГИИ <br />
           </h1>
         </div>
-        <img src="/img/svgs/phone.svg" class="phone" />
+        <a href="#!" class="phone">
+          <img src="/img/svgs/phone.svg" />
+        </a>
       </div>
     </header>
 
@@ -76,11 +78,9 @@
                 placeholder="Введите номер"
                 class="form-main__field"
               />
-              <input
-                type="submit"
-                value="Отправить"
-                class="btn form-main__submit"
-              />
+              <button type="submit" class="btn form-main__submit">
+                Отправить
+              </button>
             </form>
           </div>
         </div>
@@ -154,7 +154,28 @@
                 <h5 class="price__discount">Бесплатно</h5>
               </div>
             </div>
-            <a class="btn btn-shadow">Узнать подробнее</a>
+            <a id="js-learn-more" href="#!" class="btn btn-shadow">
+              <span class="btn__circle"></span>
+              Узнать подробнее</a
+            >
+            <div id="js-hidden-form" class="hidden-form">
+              <p class="hidden-form__text">
+                Узнайте подробнее, оставив заявку на бесплатную консультацию.
+              </p>
+              <p class="hidden-form__text">
+                Ваш менеджер свяжется с Вами и ответит на Ваши вопросы
+              </p>
+              <form class="form-main">
+                <input
+                  type="tel"
+                  placeholder="Введите номер"
+                  class="form-main__field"
+                />
+                <button type="submit" class="btn form-main__submit">
+                  Отправить
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -366,11 +387,9 @@
               placeholder="Введите номер"
               class="form-main__field"
             />
-            <input
-              type="submit"
-              value="Отправить"
-              class="btn form-main__submit"
-            />
+            <button type="submit" class="btn form-main__submit">
+              Отправить
+            </button>
           </form>
         </div>
       </div>
@@ -379,3 +398,6 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+
+<!-- todo -->
+<!-- center numbers on perks -->

@@ -11,14 +11,51 @@
   transform: scale(1);
   &:active {
     transform: scale(0.98);
+    box-shadow: none;
   }
   background-color: $c-beta;
   color: #fff;
   cursor: pointer;
 
   -webkit-tap-highlight-color: transparent;
+
+  &:focus-visible::before,
+  &:focus-visible::after {
+    content: '';
+    width: 6.25rem;
+    height: 6.25rem;
+    position: absolute;
+    top: 1.6875rem;
+    left: 5.125rem;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation-name: btn-circle-scale;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    background-color: #fff;
+  }
+
+  &:focus-visible::after {
+    left: 15.125rem;
+  }
 }
 
 .btn-shadow {
   box-shadow: 0px 0.625rem 0.9375rem rgba($c-beta, 0.2);
+}
+
+.phone {
+  outline: none;
+  transform: scale(1);
+  border-radius: 50%;
+  &:focus-visible,
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0.625rem 3rem rgba(#000, 0.2);
+  }
+  &:active {
+    transform: scale(0.98);
+    box-shadow: none;
+  }
+  -webkit-tap-highlight-color: transparent;
 }

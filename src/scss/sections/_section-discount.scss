@@ -2,6 +2,20 @@
   padding: 2.1875rem 1.375rem;
   border-radius: 0 0 1.5625rem 0;
   background-color: $c-epsilon;
+  position: relative;
+
+  & .form-main__field {
+    border: 0.125rem solid $c-alpha;
+    font-size: 1.125rem;
+    line-height: 1.4375rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: transparent;
+    color: $c-alpha;
+    &::placeholder {
+      color: $c-alpha;
+    }
+  }
 }
 
 .discount-banner,
