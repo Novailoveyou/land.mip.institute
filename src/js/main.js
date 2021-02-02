@@ -34,12 +34,12 @@ const addRipplesToBtns = (selectedClass = null) => {
   }
 }
 
-const showHiddenForm = (e) => {
-  const hiddenForm = document.getElementById('js-hidden-form')
-  hiddenForm.classList.add('show')
-  hide(e.target)
-}
+// const showHiddenForm = (e) => {
+//   const hiddenForm = document.getElementById('js-hidden-form')
+//   hiddenForm.classList.add('show')
+//   hide(e.target)
+// }
 
 addRipplesToBtns(btnsRipple)
 
-learnMoreBtn.addEventListener('click', showHiddenForm)
+// learnMoreBtn.addEventListener('click', showHiddenForm)

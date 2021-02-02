@@ -7,11 +7,6 @@
   &:focus {
     outline: none;
   }
-  &:focus-visible,
-  &:hover {
-    transform: scale(1.02);
-    box-shadow: 0px 0.625rem 3rem rgba(#000, 0.2);
-  }
 }
 
 .btn__circle {
@@ -101,4 +96,13 @@
 .hidden,
 .btn.hidden {
   display: none;
+}
+
+.section-divider {
+  width: 17.6875rem;
+  max-width: 70%;
+  height: 0.0625rem;
+  margin: 0 auto;
+  border: none;
+  background-color: $c-beta;
 }

@@ -65,8 +65,10 @@
             <form class="form-main">
               <div class="select-wrapper">
                 <span class="select-arrow-down"></span>
-                <select name="proarea" class="form-main__field">
-                  <option value="">Выбрать направление</option>
+                <select name="proarea" class="form-main__field" required>
+                  <option hidden disabled selected value>
+                    Выбрать направление
+                  </option>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -77,6 +79,8 @@
                 type="tel"
                 placeholder="Введите номер"
                 class="form-main__field"
+                autocomplete="tel"
+                required
               />
               <button type="submit" class="btn form-main__submit">
                 Отправить
@@ -158,7 +162,7 @@
               <span class="btn__circle"></span>
               Узнать подробнее</a
             >
-            <div id="js-hidden-form" class="hidden-form">
+            <!-- <div id="js-hidden-form" class="hidden-form">
               <p class="hidden-form__text">
                 Узнайте подробнее, оставив заявку на бесплатную консультацию.
               </p>
@@ -170,12 +174,14 @@
                   type="tel"
                   placeholder="Введите номер"
                   class="form-main__field"
+                  autocomplete="tel" 
+                  required
                 />
                 <button type="submit" class="btn form-main__submit">
                   Отправить
                 </button>
               </form>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -357,6 +363,7 @@
         </div>
       </section>
     </main>
+    <hr class="section-divider" />
     <footer>
       <div class="container">
         <div class="footer__content">
@@ -371,11 +378,13 @@
             формате и стоимости обучения
           </h3>
 
-          <form class="form-main">
+          <form class="form-main-alt">
             <div class="select-wrapper">
               <span class="select-arrow-down"></span>
-              <select name="proarea" class="form-main__field">
-                <option value="">Выбрать направление</option>
+              <select name="proarea" class="form-main__field" required>
+                <option hidden disabled selected value>
+                  Выбрать направление
+                </option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -386,6 +395,8 @@
               type="tel"
               placeholder="Введите номер"
               class="form-main__field"
+              autocomplete="tel"
+              required
             />
             <button type="submit" class="btn form-main__submit">
               Отправить
@@ -394,6 +405,39 @@
         </div>
       </div>
     </footer>
+
+    <section id="js-popup-form" class="popup-form">
+      <div class="container">
+        <a href="#!" class="close-btn"></a>
+        <div class="popup-form__content">
+          <h4 class="content__title">Заявка на консультацию</h4>
+          <p class="content__info">
+            Оставьте заявку, чтобы узнать одробнее об акции и мы перезвоним Вам
+            в течение 5 минут!
+          </p>
+          <form class="form-main-alt">
+            <input
+              type="text"
+              placeholder="Имя"
+              class="form-main__field"
+              autocomplete="name"
+              required
+            />
+
+            <input
+              type="tel"
+              placeholder="Номер телефона"
+              class="form-main__field"
+              autocomplete="tel"
+              required
+            />
+            <button type="submit" class="btn form-main__submit">
+              Перезвоните мне
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
 
     <script src="js/main.js"></script>
   </body>

@@ -1,35 +1,9 @@
 footer {
-  background-color: $c-epsilon;
   padding: 3.125rem 0;
 }
 
 .footer__content {
   & .content__title {
     margin-top: 0;
-  }
-  & select.form-main__field {
-    text-align-last: center;
-    & option {
-      text-align: left;
-    }
-  }
-  & .form-main__field {
-    border: 0.125rem solid $c-alpha;
-    font-size: 1.125rem;
-    line-height: 1.4375rem;
-    font-weight: 600;
-    text-align: center;
-    background-color: transparent;
-    color: $c-alpha;
-    &::placeholder {
-      color: $c-alpha;
-    }
-  }
-
-  & .select-arrow-down {
-    background-image: url(../img/svgs/triangle-down-alt.svg);
-    height: 1.5rem;
-    width: 1.5rem;
-    right: 2.2rem;
   }
 }

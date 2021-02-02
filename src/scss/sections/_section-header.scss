@@ -71,10 +71,6 @@
   line-height: 120%;
 }
 
-.form-main {
-  margin-top: 2.5rem;
-}
-
 .select-wrapper {
   position: relative;
   margin-bottom: 0.75rem;
@@ -92,29 +88,5 @@
   right: 1rem;
   transform: translateY(-50%);
   pointer-events: none;
-}
-
-.form-main__field {
-  @extend .btn-input-shared-styles;
-  font-weight: 300;
-  line-height: 120%;
-  background-color: $c-delta;
-  color: set-text-color($c-delta);
-  -webkit-appearance: none;
-  &:active,
-  &:focus {
-    background-color: $c-delta;
-  }
-  &::placeholder {
-    color: rgba(#fff, 0.5);
-  }
-  &:not(select) {
-    margin-bottom: 0.75rem;
-  }
-}
-
-.form-main__submit {
-  margin-top: 0.23rem;
-  margin-bottom: 0.75rem;
 }
 // /Section header content
