@@ -26,9 +26,8 @@ body {
   font-family: Stem, sans-serif;
   max-width: 100%;
   overflow-x: hidden;
-  // animation-name: fadeIn;
-  // animation-duration: 0.5s;
-  // animation-timing-function: ease-in;
+
+  @include fadeIn(0);
 }
 
 main {
@@ -40,5 +39,24 @@ main {
 @media only screen and (max-width: 365px) {
   html {
     font-size: 4vw;
+  }
+}
+
+// IOS support to prevent it from zooming when User clicks on the inputs
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select:focus,
+  textarea:focus,
+  input:focus {
+    font-size: 16px;
+    background: #fff;
+  }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  select,
+  textarea,
+  input {
+    font-size: 16px;
   }
 }

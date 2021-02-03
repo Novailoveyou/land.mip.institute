@@ -1,18 +1,43 @@
 .section-header {
-  padding-top: 3.375rem;
+  padding-top: 1.3125rem;
   background-color: $c-alpha;
   color: set-text-color($c-alpha);
+
+  & .content__title {
+    @include fadeIn(0.5);
+  }
+  & .content__subtitle {
+    @include fadeIn(0.7);
+  }
+  & .discount__circle {
+    @include fadeIn(0.9);
+  }
+  & .discount__text-container {
+    @include slideRight(1.1);
+  }
+  & .text-container__text {
+    @include fadeIn(1.3);
+  }
+  & .select-wrapper {
+    @include fadeIn(1.5);
+  }
+  & .form-main {
+    & input.form-main__field {
+      @include fadeIn(1.7);
+    }
+  }
+  & .form-main__submit {
+    @include fadeIn(1.9);
+  }
 }
 
 // Discount
 .discount {
+  height: 6.8125rem;
   display: flex;
-  justify-content: start;
   align-items: center;
-  height: 2.8125rem;
-  border-radius: 4.625rem;
   position: relative;
-  background-color: #540195;
+  overflow: hidden;
 }
 
 .discount__circle {
@@ -28,6 +53,7 @@
   top: 50%;
   transform: translateY(-50%);
   background-color: $c-beta;
+  z-index: 1;
 }
 
 .circle__text {
@@ -42,7 +68,16 @@
   line-height: 120%;
 }
 
-.discount__text {
+.discount__text-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2.8125rem;
+  border-radius: 4.625rem;
+  background-color: #540195;
+}
+
+.text-container__text {
   font-size: 1.25rem;
   // margin-left: auto;
   // margin-right: 1rem;
@@ -53,13 +88,14 @@
 
 // Section header content
 .section-header__content {
-  padding-top: 2.2rem;
+  padding-top: 1.6875rem;
   padding-bottom: 8.4rem;
   position: relative;
   z-index: 2;
 }
 
 .content__title {
+  margin-top: 0;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 120%;

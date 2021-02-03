@@ -54,7 +54,7 @@
 .title {
   font-style: normal;
   font-weight: 600;
-  font-size: 26px;
+  font-size: 1.625rem;
   line-height: 120%;
 }
 
@@ -83,9 +83,8 @@
 }
 
 .hiding,
-.btn.hiding {
-  position: absolute;
-  top: 0;
+.btn.hiding,
+.popup-form.hiding {
   opacity: 1;
   animation-name: fadeOut;
   animation-duration: 0.3s;
@@ -94,7 +93,8 @@
 }
 
 .hidden,
-.btn.hidden {
+.btn.hidden,
+.popup-form.hidden {
   display: none;
 }
 

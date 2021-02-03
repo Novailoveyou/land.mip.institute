@@ -63,5 +63,34 @@
     transform: scale(0.98);
     box-shadow: none;
   }
+  cursor: pointer;
   -webkit-tap-highlight-color: transparent;
+}
+
+.close-btn {
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0.6rem;
+  right: 0.6rem;
+  border-radius: 50%;
+  background-color: $c-lambda;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  outline: none;
+  &:focus-visible,
+  &:hover {
+    background-color: $c-beta;
+    & .close-btn__icon {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+
+.close-btn__icon {
+  width: 1rem;
+  height: 1rem;
 }

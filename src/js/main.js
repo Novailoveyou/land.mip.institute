@@ -40,6 +40,27 @@ const addRipplesToBtns = (selectedClass = null) => {
 //   hide(e.target)
 // }
 
+const closePopUpForm = (e) => {
+  const popUpForm = document.getElementById('js-popup-form')
+  const closeBtn = document.getElementById('js-pop-up-close-btn')
+  const popUpFormContent = document.getElementById('js-popup-form__content')
+  if (
+    (!popUpFormContent.contains(e.target) && e.target !== popUpFormContent) ||
+    closeBtn.contains(e.target)
+  ) {
+    hide(popUpForm)
+    popUpForm.removeEventListener('click', closePopUpForm)
+  }
+}
+
+const showPopUpForm = () => {
+  const popUpForm = document.getElementById('js-popup-form')
+  popUpForm.classList.remove('hidden')
+  popUpForm.addEventListener('click', closePopUpForm)
+}
+
+learnMoreBtn.addEventListener('click', showPopUpForm)
+
 addRipplesToBtns(btnsRipple)
 
 // learnMoreBtn.addEventListener('click', showHiddenForm)

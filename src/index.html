@@ -22,7 +22,12 @@
     <header>
       <div class="container">
         <div class="logo">
-          <img src="/img/logo.png" class="logo__img" />
+          <img
+            src="/img/logo.png"
+            class="logo__img"
+            width="33px"
+            height="40px"
+          />
           <div class="logo__line"></div>
           <h1 class="logo__text">
             МОСКОВСКИЙ <br />
@@ -48,7 +53,9 @@
                 до 20 февраля
               </p>
             </div>
-            <p class="discount__text">+ 2 бонусных модуля</p>
+            <div class="discount__text-container">
+              <p class="text-container__text">+ 2 бонусных модуля</p>
+            </div>
           </div>
           <div class="section-header__content">
             <h2 class="content__title">
@@ -406,14 +413,20 @@
       </div>
     </footer>
 
-    <section id="js-popup-form" class="popup-form">
+    <section id="js-popup-form" class="popup-form hidden">
       <div class="container">
-        <a href="#!" class="close-btn"></a>
-        <div class="popup-form__content">
+        <div id="js-popup-form__content" class="popup-form__content">
+          <a href="#!" id="js-pop-up-close-btn" class="close-btn">
+            <img
+              class="close-btn__icon"
+              src="./img/svgs/close.svg"
+              alt="Закрыть"
+            />
+          </a>
           <h4 class="content__title">Заявка на консультацию</h4>
           <p class="content__info">
-            Оставьте заявку, чтобы узнать одробнее об акции и мы перезвоним Вам
-            в течение 5 минут!
+            Оставьте заявку, чтобы узнать подробнее об акции и мы перезвоним Вам
+            в ближайшее время!
           </p>
           <form class="form-main-alt">
             <input

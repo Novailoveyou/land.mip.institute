@@ -4,6 +4,13 @@ header {
   height: 5.375rem;
   display: flex;
   align-items: center;
+
+  & .phone {
+    & img {
+      @include rotateNBack(1.5);
+    }
+    @include fadeIn(1.5);
+  }
 }
 
 header .container {
